@@ -1,0 +1,162 @@
+/* CSS - style.css */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.hero-banner {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.banner-img {
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.vision-mission {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+  margin: 40px 0;
+}
+
+.profile-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+  background: #667eea;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+}
+
+.form-section {
+  background: #f8f9fa;
+  padding: 40px 0;
+  margin-top: 40px;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  display: none;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #667eea !important;
+}
+
+.section-title {
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.welcome-msg {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-banner {
+    padding: 50px 0;
+  }
+
+  .hero-banner h1 {
+    font-size: 2rem;
+  }
+
+  .banner-img {
+    height: 200px;
+    font-size: 18px;
+  }
+
+  .profile-img {
+    width: 80px;
+    height: 80px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-banner h1 {
+    font-size: 1.5rem;
+  }
+
+  .welcome-msg {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .banner-img {
+    height: 150px;
+    font-size: 16px;
+  }
+
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    color: #444;
+    font-weight: 500;
+    margin-left: 15px;
+    transition: color 0.2s ease-in-out;
+  }
+
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: #764ba2;
+    text-decoration: underline;
+  }
+
+  .navbar-light .navbar-nav .nav-link.active {
+    color: #667eea;
+    font-weight: bold;
+  }
+
+  .navbar-toggler {
+    border: none;
+  }
+
+  .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .navbar-brand {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #764ba2 !important;
+  }
+}
